@@ -39,7 +39,9 @@ O servidor inciará na porta:7213 - acesse <https://localhost:7213/swagger/index
 
 <br />
 Exemplo de Swagger
+
 ```
+$
 {
   "customerName": "elir ribeiro",
   "customerEmail": "elirweb@gmail.com",
