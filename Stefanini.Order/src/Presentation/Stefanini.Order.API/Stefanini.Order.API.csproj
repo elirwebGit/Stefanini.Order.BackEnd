@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <ProjectReference Include="..\..\Application\Stefanini.Order.Application\Stefanini.Order.Application.csproj" />
+    <ProjectReference Include="..\..\Util\Stefanini.Order.IOC\Stefanini.Order.IOC.csproj" />
+    <ProjectReference Include="..\..\Util\Stefanini.Order.Util\Stefanini.Order.Util.csproj" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>

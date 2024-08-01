@@ -1,10 +1,9 @@
 ﻿namespace Stefanini.Order.Domain.Interfaces
 {
-    public interface IOrderRepository
+    public interface IOrderRepository : IRepository<Domain.Entites.Order>, IDisposable
     {
-        Task<IEnumerable<string>> GetOrderAsync();
-        Task<string> GetByIdAsync(int livroId);
-        Task AddAsync(Entites.Order order);
-        Task UpdateAsync(Entites.Order order);
+        Task<Domain.Entites.Order> GetOrderId(int orderId);
+        Task<List<Domain.Dapper.OrderList>> GetOrder();
+
     }
 }

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Stefanini.Order.Domain\Stefanini.Order.Domain.csproj" />
+    <ProjectReference Include="..\..\Infra\Stefanini.Order.Infra\Stefanini.Order.Infra.csproj" />
+  </ItemGroup>
+
 </Project>

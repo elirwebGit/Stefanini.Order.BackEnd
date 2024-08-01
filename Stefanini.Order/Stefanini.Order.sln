@@ -15,13 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{42D9E896-8388-4BC3-8922-08C90A926E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.Infra", "src\Infra\Stefanini.Order.Infra\Stefanini.Order.Infra.csproj", "{99C72BA1-B88D-46A9-80F4-0594594983EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanini.Order.Infra", "src\Infra\Stefanini.Order.Infra\Stefanini.Order.Infra.csproj", "{99C72BA1-B88D-46A9-80F4-0594594983EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.Domain", "src\Domain\Stefanini.Order.Domain\Stefanini.Order.Domain.csproj", "{DA063059-49F0-423F-86E0-C15B7E62BA6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanini.Order.Domain", "src\Domain\Stefanini.Order.Domain\Stefanini.Order.Domain.csproj", "{DA063059-49F0-423F-86E0-C15B7E62BA6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.Application", "src\Application\Stefanini.Order.Application\Stefanini.Order.Application.csproj", "{C9EB99C9-CD4B-4B24-B94D-58D3F1533189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanini.Order.Application", "src\Application\Stefanini.Order.Application\Stefanini.Order.Application.csproj", "{C9EB99C9-CD4B-4B24-B94D-58D3F1533189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.IOC", "src\Util\Stefanini.Order.IOC\Stefanini.Order.IOC.csproj", "{F2C8AE74-486F-4567-B991-C8D4331DF335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stefanini.Order.IOC", "src\Util\Stefanini.Order.IOC\Stefanini.Order.IOC.csproj", "{F2C8AE74-486F-4567-B991-C8D4331DF335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.Util", "src\Util\Stefanini.Order.Util\Stefanini.Order.Util.csproj", "{C0B96D9A-452E-4EED-88C1-E82DE64161CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stefanini.Order.API", "src\Presentation\Stefanini.Order.API\Stefanini.Order.API.csproj", "{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{F2C8AE74-486F-4567-B991-C8D4331DF335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C8AE74-486F-4567-B991-C8D4331DF335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C8AE74-486F-4567-B991-C8D4331DF335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B96D9A-452E-4EED-88C1-E82DE64161CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B96D9A-452E-4EED-88C1-E82DE64161CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B96D9A-452E-4EED-88C1-E82DE64161CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B96D9A-452E-4EED-88C1-E82DE64161CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +71,8 @@ Global
 		{DA063059-49F0-423F-86E0-C15B7E62BA6E} = {DC43F8AD-27C8-46C9-A138-664C11A22B2D}
 		{C9EB99C9-CD4B-4B24-B94D-58D3F1533189} = {AA6A40BE-D58B-47D1-AFE1-C0A9F2C60D95}
 		{F2C8AE74-486F-4567-B991-C8D4331DF335} = {42D9E896-8388-4BC3-8922-08C90A926E8B}
+		{C0B96D9A-452E-4EED-88C1-E82DE64161CB} = {42D9E896-8388-4BC3-8922-08C90A926E8B}
+		{9C7ED3F0-8D74-4EEE-9182-505E3F7055BF} = {AFE0A6F9-787E-47C6-88FC-E87767A9B0AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9ABCBFD-9A08-4124-9BA0-1D3F4A5B1C1A}

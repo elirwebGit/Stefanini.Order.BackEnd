@@ -5,7 +5,7 @@
         public string? ProductName { get;  set; }
         public decimal Value { get; set; }
 
-        public OrderItems OrderItems { get; set; } = null!;
+        public OrderItem OrderItems { get; set; } = null!;
 
         public Product()
         {

@@ -1,0 +1,12 @@
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\bin\Debug\net6.0\Stefanini.Order.Util.deps.json
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\bin\Debug\net6.0\Stefanini.Order.Util.dll
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\bin\Debug\net6.0\Stefanini.Order.Util.pdb
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.csproj.AssemblyReference.cache
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.AssemblyInfoInputs.cache
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.AssemblyInfo.cs
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.csproj.CoreCompileInputs.cache
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.dll
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\refint\Stefanini.Order.Util.dll
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\Stefanini.Order.Util.pdb
+D:\work\Stefanini.Order.BackEnd\Stefanini.Order\src\Util\Stefanini.Order.Util\obj\Debug\net6.0\ref\Stefanini.Order.Util.dll

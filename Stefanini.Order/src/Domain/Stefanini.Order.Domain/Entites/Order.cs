@@ -6,19 +6,24 @@
         public string? CustomerEmail { get; private set; }
         public DateTime CreateAt { get; private set; }
         public bool Paid { get; private set; }
-        public List<OrderItems> OrderItem { get; private set; } = new List<OrderItems>();
+        public bool Active { get; set; }
+        public List<OrderItem> OrderItem { get; private set; } = new List<OrderItem>();
 
         public Order()
         {
 
         }
 
-        public Order(string customerName,string customerEmail, bool paid, List<OrderItems> orderItems)
+        public Order(string customerName,string customerEmail)
         {
             CustomerName = customerName;
             CustomerEmail = customerEmail;
-            Paid = paid;
-            CreateAt = DateTime.Now;
+            Paid = true;
+            Active = true;
+            if (Id == 0)
+              CreateAt = DateTime.Now;
         }
+
+       
     }
 }
