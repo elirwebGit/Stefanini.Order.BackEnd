@@ -35,5 +35,12 @@ namespace Stefanini.Order.API.Api
             return Ok(orderLists);
         }
 
+        [HttpPut("{orderId}")]
+        public async Task<IActionResult> Update(int orderId, [FromBody] OrderRequest orderRequest)
+        {
+            var result = await _orderApp.UpdateOrder(orderId, orderRequest);
+            return new ObjectResult(result) { StatusCode = result.StatusCode, Value = result.Message };
+        }
+
     }
 }

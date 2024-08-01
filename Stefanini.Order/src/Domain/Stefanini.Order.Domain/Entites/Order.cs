@@ -20,10 +20,16 @@
             CustomerEmail = customerEmail;
             Paid = true;
             Active = true;
-            if (Id == 0)
               CreateAt = DateTime.Now;
         }
 
-       
+        public Order(string customerName, string customerEmail, List<OrderItem> orderItems)
+        {
+            CustomerName = customerName;
+            CustomerEmail = customerEmail;
+            Paid = true;
+            Active = true;
+            OrderItem = orderItems;
+        }
     }
 }

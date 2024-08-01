@@ -103,10 +103,29 @@ namespace Stefanini.Order.Application.App
 
         }
 
-        public async Task<Domain.Entites.Order> UpdateOrder(int orderId, OrderRequest orderRequest)
+        public async Task<OrderResponse> UpdateOrder(int orderId, OrderRequest orderRequest)
         {
-            var result = _orderRepository.Update(orderId,ViewModelToDomain.Order(orderRequest));
-            return await Task.FromResult(result);
+            var order = _orderRepository.GetOrder(orderId).Result;
+            OrderResponse orderResponse = new OrderResponse();
+            if (order == null)
+            {
+                orderResponse.Message = $"Pedido:{orderId} não encontrado na base de dados";
+                orderResponse.StatusCode = 401;
+
+            }
+            else {
+                _orderRepository.Update(orderId, ViewModelToDomain.Order(orderRequest));
+                orderRequest.Item.ForEach(item => {
+                    var product = productRepository.GetProduct(item.ProductId).Result;
+                    decimal finalPrice = (item.Quantity * product.Value);
+                    var itemId = order.Select(it => it.ItemId).FirstOrDefault();
+                    orderItemRepository.Update(itemId, ViewModelToDomain.OrderItems(orderId, item, finalPrice));
+
+                });
+                orderResponse.Message = $"Pedido:{orderId} atualizado com sucesso";
+                orderResponse.StatusCode = 200;
+            }
+            return await Task.FromResult(orderResponse);
         }
     }
 }

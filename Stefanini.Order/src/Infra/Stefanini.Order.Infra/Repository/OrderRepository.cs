@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Stefanini.Order.Domain.Interfaces;
 using Stefanini.Order.Infra.Context;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace Stefanini.Order.Infra.Repository
@@ -17,7 +18,7 @@ namespace Stefanini.Order.Infra.Repository
             GC.SuppressFinalize(this);
         }
 
-        public async Task<List<Domain.Dapper.OrderList>> GetOrder()
+        public async Task<List<Domain.Dapper.OrderList>> GetOrder(int orderId = 0)
         {
             var cn = _context.Connection;
             StringBuilder sql = new StringBuilder();
@@ -27,7 +28,11 @@ namespace Stefanini.Order.Infra.Repository
             sql.Append(" inner join OrderItem item on item.OrderId = pedido.OrderId ");
             sql.Append(" inner join Product product on Product.ProductId = item.ProductId ");
             sql.Append(" where  pedido.Active = 1 ");
-            var result = await Task.FromResult(cn.Query<Domain.Dapper.OrderList>(sql.ToString()));
+            if (orderId != 0) {
+                sql.Append(" and  pedido.OrderId = @orderId ");
+
+            }
+            var result = await Task.FromResult(cn.Query<Domain.Dapper.OrderList>(sql.ToString(),new { OrderId = orderId }));
             return result.ToList();
         }
 
