@@ -11,30 +11,35 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Aspnet Core](<https://dotnet.microsoft.com/pt-br/apps/aspnet>)
 - [Git](<https://docs.github.com/pt/contributing/writing-for-github-docs/versioning-documentation>)
 
-### 🛠 Como rodar a aplicação
+### Como rodar a aplicação
  Clone este repositório
+```
 $ git clone <https://github.com/elirwebGit/Stefanini.Order.BackEnd.git>
-
-Acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Util <br />
+```
+Acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Util\ <br />
 vai no arquivo WebConfig.cs, altera a string de conexão do banco de dados para sua local <br />
 segue exemplo: <br />
-$ "Data Source={endereço local da sua maquina};Initial Catalog=Stefanini;User ID={seu usuario};password={sua senha}"<br />
 
+```
+$ "Data Source={endereço local da sua maquina};Initial Catalog=Stefanini;User ID={seu usuario};password={sua senha}"<br />
+```
 Após isso acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Infra do projeto no terminal/cmd <br />
 roda os seguintes comandos <br />
+```
 $ cd dotnet ef migrations add "nome que queira dar a sua migration" <br />
 $ cd dotnet ef database update <br />
-
+```
 
 Execute a aplicação: Stefanini.Order.API (Set as Startup project) <br />
+```
 $ dotnet run <br />
-
+```
 
 O servidor inciará na porta:7213 - acesse <https://localhost:7213/swagger/index.html>
 
 <br />
 Exemplo de Swagger
-
+```
 {
   "customerName": "elir ribeiro",
   "customerEmail": "elirweb@gmail.com",
@@ -51,3 +56,4 @@ Exemplo de Swagger
     }
   ]
 }
+```
