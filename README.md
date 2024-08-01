@@ -12,21 +12,23 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Git](<https://docs.github.com/pt/contributing/writing-for-github-docs/versioning-documentation>)
 
 ### Arquitetura definida para o projeto
-Para este projeto foi definido a arquitetura DDD (Domain Design Driven)
+Para este projeto foi definido a arquitetura DDD (Domain Design Driven) <br />
 Infra -> Essa camada lida com a comunicação com bancos de dados, sistemas externos, frameworks e bibliotecas de infraestrutura, e outros serviços necessários para o funcionamento da aplicação. <br />
+<br />
 Dominio ->  É onde residem as regras de negócio, lógicas, entidades e todos os conceitos centrais do negócio que a aplicação está tentando resolver <br />
+<br />
 Application -> É responsável por orquestrar as operações do sistema e gerenciar a interação entre as camadas de domínio e infraestrutura <br />
+<br />
 Presentation - > A camada de apresentação em uma arquitetura de software, como a proposta pelo Domain-Driven Design (DDD), é responsável pela interação com os usuários ou outros sistemas
 <br />
 
 ### Funcionalidade da aplicação
-POST /api/order -> criação de um novo pedido
-GET /api/order -> retornar a lista de pedidos criados
-DELETE /api/order/{orderId} -> excluir pedido que se encontra cadastrado na base dados obs: {orderId} é o numero do pedido
-PUT /api/order/{orderId} -> atualiza o pedido que se encontra cadastrado na base dados obs: {orderId} é o numero do pedido
+POST /api/order -> criação de um novo pedido <br />
+GET /api/order -> retornar a lista de pedidos criados <br />
+DELETE /api/order/{orderId} -> excluir pedido que se encontra cadastrado na base dados obs: {orderId} é o numero do pedido <br />
+PUT /api/order/{orderId} -> atualiza o pedido que se encontra cadastrado na base dados obs: {orderId} é o numero do pedido <br />
 
 
-<br />
 ### Como rodar a aplicação
  Clone este repositório
 ```
