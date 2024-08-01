@@ -15,17 +15,39 @@ As seguintes ferramentas foram usadas na construção do projeto:
  Clone este repositório
 $ git clone <https://github.com/elirwebGit/Stefanini.Order.BackEnd.git>
 
-Acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Util 
+Acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Util <br />
 vai no arquivo WebConfig.cs, altera a string de conexão do banco de dados para sua local
-segue exemplo: 
-$ "Data Source={endereço local da sua maquina};Initial Catalog=Stefanini;User ID={seu usuario};password={sua senha}"
+segue exemplo: <br />
+$ "Data Source={endereço local da sua maquina};Initial Catalog=Stefanini;User ID={seu usuario};password={sua senha}"<br />
 
-Após isso acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Infra do projeto no terminal/cmd
-roda os seguintes comandos
-$ cd dotnet ef migrations add "nome que queira dar a sua migration"
-$ cd dotnet ef database update
+Após isso acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Infra do projeto no terminal/cmd <br />
+roda os seguintes comandos <br />
+$ cd dotnet ef migrations add "nome que queira dar a sua migration" <br />
+$ cd dotnet ef database update <br />
 
-Execute a aplicação: Stefanini.Order.API (Set as Startup project)
-$ dotnet run
+<br />
+Execute a aplicação: Stefanini.Order.API (Set as Startup project) <br />
+$ dotnet run <br />
 
-# O servidor inciará na porta:7213 - acesse <https://localhost:7213/swagger/index.html>
+<br /><br />
+O servidor inciará na porta:7213 - acesse <https://localhost:7213/swagger/index.html>
+
+<br />
+Exemplo de Swagger
+
+{
+  "customerName": "elir ribeiro",
+  "customerEmail": "elirweb@gmail.com",
+  "item": [
+    {
+      "productId": 10,
+      "productName": "Mouse",
+      "quantity": 3
+    },
+{
+      "productId": 100,
+      "productName": "Mouse",
+      "quantity": 3
+    }
+  ]
+}
