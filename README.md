@@ -34,6 +34,7 @@ PUT /api/order/{orderId} -> atualiza o pedido que se encontra cadastrado na base
 ```
 $ git clone <https://github.com/elirwebGit/Stefanini.Order.BackEnd.git>
 ```
+Roda a aplicação BackEnd: Stefanini.Order.BackEnd na IDE: Visual Studio: 2022 ou Visual Code <br />
 Acesse a pasta: Stefanini.Order.BackEnd\Stefanini.Order\src\Util\ <br />
 vai no arquivo WebConfig.cs, altera a string de conexão do banco de dados para sua local <br />
 segue exemplo: <br />
